@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="main_blue">#33A5FE</color>
+    <color name="bg_press">#AF86CDE7</color>
+    <!-- 半透明 -->
+    <color name="translucent01">#55000000</color>
+    <color name="translucent02">#97000000</color>
+</resources>

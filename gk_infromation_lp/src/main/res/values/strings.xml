@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">com.zga</string>
+    <string name="app_package_name">乐平信息采集</string>
+
+    //个人基本信息表
+    <string name="personal_message_txt1">姓名：</string>
+    <string name="personal_message_txt2">性别：</string>
+    <string name="personal_message_txt3">曾用名：</string>
+    <string name="personal_message_txt4">与户主关系：</string>
+    <string name="personal_message_txt5">出生地：</string>
+    <string name="personal_message_txt6">民族：</string>
+    <string name="personal_message_txt7">籍贯：</string>
+    <string name="personal_message_txt8">出生日期：</string>
+    <string name="personal_message_txt9">住址：</string>
+    <string name="personal_message_txt10">宗教信仰：</string>
+    <string name="personal_message_txt11">身高：</string>
+    <string name="personal_message_txt12">何时迁来本市：</string>
+    <string name="personal_message_txt13">文化程度：</string>
+    <string name="personal_message_txt14">婚姻状况：</string>
+    <string name="personal_message_txt15">兵役状况：</string>
+    <string name="personal_message_txt16">服务处所：</string>
+    <string name="personal_message_txt17">职业：</string>
+    <string name="personal_message_txt18">血型：</string>
+    <string name="personal_message_txt19">户口登记日期：</string>
+    <string name="personal_message_txt20">身份证有效日期：</string>
+    <string name="personal_message_txt21">联系方式：</string>
+    <string name="personal_message_txt22">户口状态：</string>
+    <string name="personal_message_txt23">身份证发证机关：</string>
+    <string name="personal_message_txt24">流动类型：</string>
+    <string name="personal_message_txt25">流动状况：</string>
+    <string name="personal_message_txt26">个人基本信息表</string>
+</resources>

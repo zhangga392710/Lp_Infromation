@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DialogStyle-->
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <!--topStyle-->
+    <style name="top_bar_title_style">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20.0dip</item>
+    </style>
+</resources>

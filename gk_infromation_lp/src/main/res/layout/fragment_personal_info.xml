@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data class="MainDataBind">
+
+        <variable
+            name="userB"
+            type="com.example.zga.bean.UsersBean" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt1" />
+
+                    <EditText
+                        android:id="@+id/per_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.names}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt2" />
+
+                    <EditText
+                        android:id="@+id/per_sex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.sex}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt3" />
+
+                    <EditText
+                        android:id="@+id/per_before_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.afternames}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt4" />
+
+                    <EditText
+                        android:id="@+id/per_hz_gx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.father}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt5" />
+
+                    <EditText
+                        android:id="@+id/per_csd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.born}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt6" />
+
+                    <EditText
+                        android:id="@+id/per_mz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.national}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt7" />
+
+                    <EditText
+                        android:id="@+id/per_jga"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.native_place}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt8" />
+
+                    <EditText
+                        android:id="@+id/per_csrq"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.birthday}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt9" />
+
+                    <EditText
+                        android:id="@+id/per_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.other_address}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt10" />
+
+                    <EditText
+                        android:id="@+id/per_zjxya"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.religious}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt11" />
+
+                    <EditText
+                        android:id="@+id/per_height"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.height}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt12" />
+
+                    <EditText
+                        android:id="@+id/per_hsqlbs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.moved_city}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt13" />
+
+                    <EditText
+                        android:id="@+id/per_whcd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.culture}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt14" />
+
+                    <EditText
+                        android:id="@+id/per_hyzk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.marital_state}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt15" />
+
+                    <EditText
+                        android:id="@+id/per_byzk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.military_service}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt16" />
+
+                    <EditText
+                        android:id="@+id/per_fwcs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.service_space}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt17" />
+
+                    <EditText
+                        android:id="@+id/per_work"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.professional}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt18" />
+
+                    <EditText
+                        android:id="@+id/per_xx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.blood_type}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt19" />
+
+                    <EditText
+                        android:id="@+id/per_hkdjrq"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.Household_data}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt20" />
+
+                    <EditText
+                        android:id="@+id/per_sfzyxq"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.Id_card_data}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt21" />
+
+                    <EditText
+                        android:id="@+id/per_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.phone}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt22" />
+
+                    <EditText
+                        android:id="@+id/per_hk_status"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.father_state}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt23" />
+
+                    <EditText
+                        android:id="@+id/per_sfzqfjg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.Id_card_house}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt24" />
+
+                    <EditText
+                        android:id="@+id/per_ldlx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.flow_type}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_md_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_8dp">
+
+                    <TextView
+                        style="@style/visit_item_text"
+                        android:text="@string/personal_message_txt25" />
+
+                    <EditText
+                        android:id="@+id/per_ldzt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:singleLine="true"
+                        android:text="@{userB.father_state}"
+                        android:textSize="@dimen/dimen_14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
